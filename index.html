@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- AJAX -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+  <!-- costume css -->
+  <link rel="stylesheet" type="text/css" href="css/flipbook.style.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <!-- Bootstrap Css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- Include JS -->
+  <script src="js/flipbook.min.js"></script>
+
+  <script type="text/javascript">
+      $(document).ready(function () {
+          $("#read").flipBook({
+            //Layout Setting
+            pdfUrl:'UNIVERSO_EM_DESENCANTO_01_Volume_da_Obra.pdf',
+            lightBox:true,
+            layout:3,
+            currentPage:{vAlign:"bottom", hAlign:"left"},
+            // BTN SETTING
+            btnShare : {enabled:false},
+            btnPrint : {
+              hideOnMobile:true
+            },
+            btnDownloadPages : {
+              enabled: true,
+              title: "Download pages",
+              icon: "fa-download",
+              icon2: "file_download",
+              url: "images/pdf.rar",
+              name: "allPages.zip",
+              hideOnMobile:false
+            },
+            btnColor:'rgb(255,120,60)',
+            sideBtnColor:'rgb(255,120,60)',
+            sideBtnSize:60,
+            sideBtnBackground:"rgba(0,0,0,.7)",
+            sideBtnRadius:60,
+            btnSound:{vAlign:"top", hAlign:"left"},
+            btnAutoplay:{vAlign:"top", hAlign:"left"},
+            // SHARING
+            btnShare : {
+              enabled: true,
+              title: "Share",
+              icon: "fa-share-alt"
+            },
+            facebook : {
+              enabled: true,
+              url: "https://cdn.moble.com/w/2744/1155782/file/CIP%20Capability%20Statement%202023.pdf"
+            },
+            google_plus : {
+              enabled: false
+            },
+            email : {
+              enabled: true,
+              url: "https://ismanyan.github.io/Pdf_flipbook.demo.github.io/pdf/pdf.pdf",
+              title: "PDF KPK",
+              description: "Silahkan click link di bawah untuk melihat / mengunduf pdf"
+            },
+            twitter : {
+              enabled: true,
+              url: "https://ismanyan.github.io/Pdf_flipbook.demo.github.io/pdf/pdf.pdf"
+            },
+            pinterest : {
+            enabled: true,
+            url: "https://ismanyan.github.io/Pdf_flipbook.demo.github.io/pdf/pdf.pdf"
+            }
+        });
+      })
+  </script>
+
+  </head>
+
+  <body>
+    <div class="button">
+      <a id="read" class="btn btn-primary mt-2 text-white">Open PDF
+        <i class="fas fa-book-reader fa-lg"></i>
+      </a>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+  </body>
+
+</html>
